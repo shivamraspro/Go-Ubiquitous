@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="digital_text_size">40dp</dimen>
-    <dimen name="digital_text_size_round">45dp</dimen>
-    <dimen name="digital_x_offset">15dp</dimen>
-    <dimen name="digital_x_offset_round">25dp</dimen>
-    <dimen name="digital_y_offset">90dp</dimen>
+    <dimen name="digital_text_size_time">36dp</dimen>
+    <dimen name="digital_text_size_time_round">44dp</dimen>
+
+    <dimen name="digital_text_size_date">14dp</dimen>
+    <dimen name="digital_text_size_date_round">16dp</dimen>
+
+    <dimen name="digital_text_size_weather">25dp</dimen>
+    <dimen name="digital_text_size_weather_round">32dp</dimen>
+
+    <dimen name="digital_x_offset_time">45dp</dimen>
+    <dimen name="digital_x_offset_time_round">55dp</dimen>
+
+    <dimen name="digital_x_offset_date">35dp</dimen>
+    <dimen name="digital_x_offset_date_round">40dp</dimen>
+
+    <dimen name="digital_x_offset_weather">30dp</dimen>
+    <dimen name="digital_x_offset_weather_round">30dp</dimen>
+
+    <dimen name="digital_y_offset_time">60dp</dimen>
+    <dimen name="digital_y_offset_time_round">75dp</dimen>
+
+    <dimen name="digital_y_offset_date">85dp</dimen>
+    <dimen name="digital_y_offset_date_round">100dp</dimen>
+
+    <dimen name="divider_y_offset">100dp</dimen>
+    <dimen name="divider_y_offset_round">120dp</dimen>
+
+    <dimen name="digital_y_offset_weather">140dp</dimen>
+    <dimen name="digital_y_offset_weather_round">160dp</dimen>
+
 </resources>

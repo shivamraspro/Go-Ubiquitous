@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.android.sunshine.app">
+          package="com.example.android.sunshine">
 
     <!-- This permission is necessary in order for Sunshine to perform network access. -->
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -61,7 +61,7 @@
             android:theme="@style/AppTheme.Details">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.sunshine.app.MainActivity"/>
+                android:value="com.example.android.sunshine.MainActivity"/>
         </activity>
         <activity
             android:name=".SettingsActivity"
@@ -70,7 +70,7 @@
             android:theme="@style/SettingsTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.sunshine.app.MainActivity"/>
+                android:value="com.example.android.sunshine.MainActivity"/>
         </activity>
 
         <provider
@@ -181,6 +181,14 @@
         <service
             android:name=".gcm.RegistrationIntentService"
             android:exported="false">
+        </service>
+        <service
+            android:name=".FetchWeatherRequestListenerService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
         </service>
     </application>
 
