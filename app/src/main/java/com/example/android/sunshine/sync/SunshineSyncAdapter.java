@@ -526,8 +526,12 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter implements
                     (context, high));
             putDataMapRequest.getDataMap().putString("tempLow", Utility.formatTemperature
                     (context, low));
+            //onDataChanged() will only be called if the data actually changed.
+            //This ensures you are sending a value that always changes.
+            putDataMapRequest.getDataMap().putLong("time", System.currentTimeMillis());
 
             PutDataRequest request = putDataMapRequest.asPutDataRequest();
+            request.setUrgent();
             Wearable.DataApi.putDataItem(mGoogleApiClient, request)
                     .setResultCallback(new ResultCallback<DataApi.DataItemResult>() {
                         @Override
